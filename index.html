@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="https://api.docs.onlyoffice.com/web-apps/apps/api/documents/api.js"></script>
+</head>
+
+<body>
+    <div id="editorSpace">
+        <div id="placeholder"></div>
+    </div>
+    <script>
+        new DocsAPI.DocEditor("placeholder", {
+            "document": {
+                "fileType": "docx",
+                "info": {},
+                "key": "apiwh9a376f3f-0703-4dfd-878c-55a3fa3ee6cc",
+                "permissions": {},
+                "title": "Example Title",
+                "url": 'https://example.com/url-to-example-document.docx',
+            },
+            "documentType": "cell",
+            "editorConfig": {
+                "callbackUrl": "https://api1.onlyoffice.com/editors/callback",
+                "customization": {
+                    "anonymous": {
+                        "request": false
+                    },
+                    "feedback": {
+                        "visible": true
+                    },
+                    "integrationMode": "embed"
+                }
+            },
+            "height": "550px",
+            "token": "ew0KICAidHlwIjogIkpXVCIsDQogICJhbGciOiAiSFMyNTYiDQp9.ew0KICAiZG9jdW1lbnQiOiB7DQogICAgImZpbGVUeXBlIjogInhsc3giLA0KICAgICJpbmZvIjoge30sDQogICAgImtleSI6ICJhcGl3aDlhMzc2ZjNmLTA3MDMtNGRmZC04NzhjLTU1YTNmYTNlZTZjYyIsDQogICAgInBlcm1pc3Npb25zIjoge30sDQogICAgInRpdGxlIjogIkV4YW1wbGUgVGl0bGUiLA0KICAgICJ1cmwiOiAiaHR0cHM6Ly9zdGF0aWMub25seW9mZmljZS5jb20vYXNzZXRzL2RvY3Mvc2FtcGxlcy9kZW1vLnhsc3giDQogIH0sDQogICJkb2N1bWVudFR5cGUiOiAiY2VsbCIsDQogICJlZGl0b3JDb25maWciOiB7DQogICAgImNhbGxiYWNrVXJsIjogImh0dHBzOi8vYXBpMS5vbmx5b2ZmaWNlLmNvbS9lZGl0b3JzL2NhbGxiYWNrIiwNCiAgICAiY3VzdG9taXphdGlvbiI6IHsNCiAgICAgICJhbm9ueW1vdXMiOiB7DQogICAgICAgICJyZXF1ZXN0IjogZmFsc2UNCiAgICAgIH0sDQogICAgICAiZmVlZGJhY2siOiB7DQogICAgICAgICJ2aXNpYmxlIjogdHJ1ZQ0KICAgICAgfSwNCiAgICAgICJpbnRlZ3JhdGlvbk1vZGUiOiAiZW1iZWQiDQogICAgfQ0KICB9LA0KICAiaGVpZ2h0IjogIjU1MHB4IiwNCiAgIndpZHRoIjogIjEwMCUiDQp9.gf7WtilR7WB1ydYHapizZi_a0gkAURTgdQfjon17Kkw",
+            "width": "100%"
+        });
+    </script>
+</body>
+
+</html>
